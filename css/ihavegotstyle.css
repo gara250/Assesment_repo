@@ -1,0 +1,38 @@
+ul
+{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.index-image
+{
+	height:400px;
+	width:400px;
+}
+body
+{
+	font-style:normal;
+	z-index:9998;
+}
+
+#cookie-statement
+{
+	z-index:9999;
+	margin:50px; 
+
+}
+
+p
+{
+	font-style:normal;
+}
+
+article
+{
+	font-style:normal;
+}
+
+
+
+
