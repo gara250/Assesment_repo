@@ -1,3 +1,5 @@
+/* dit zijn alle css bewerkingen voor de website gracie-haarlem */
+
 ul
 {
 	list-style-type: none;
@@ -10,6 +12,19 @@ ul
 	height:400px;
 	width:400px;
 }
+
+.secondary-image
+{
+	height:500px;
+	width:750px;
+	float:left;
+}
+
+.sport-image
+{
+	height:400px;
+	width:500px;
+}
 body
 {
 	font-style:normal;
@@ -20,7 +35,6 @@ body
 {
 	z-index:9999;
 	margin:50px; 
-
 }
 
 p

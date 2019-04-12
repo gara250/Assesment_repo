@@ -2,24 +2,96 @@
 <html lang="nl">
 	<head>
 		<meta charset= "utf-8">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+		<meta name="description" content="Contact pagina">
+		<meta name="keywords" content="naam voornaam achternaam email bericht verzenden">
 		<meta name="author" content="Gara Omerbella">
 		<link rel="stylesheet" type="text/css" href="css/ihavegotstyle.css"/>
 		<link rel="icon" type="image/png" href="img/Favicon32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="img/Favicon16.png" sizes="16x16" />
+		<title> Contact </title>
 	</head>
 	
+	<!--- dit is de contact pagina --->
+	
 	<body>
-		<nav>
-		
-		</nav>
-		
 		<header>
-		
+			<nav>
+				<ul>
+					<li><a href="index.html"> home </a></li>
+					<li><a href="Secondary.html"> Omgeving </a></li>
+					<li><a href="sport.html"> Sport </a></li>
+					<li><a href="jiu_jitsu.html"> Jiu Jitsu </a></li>
+					<li><a href="Contact.html"> Contact </a></li>
+				</ul>
+			</nav>
 		</header>
 		
 		<section>
+			<form
+				action = "http://witan.nl/inholland/testform.php"
+				method = "post"
+				>
+			
+					<fieldset>
+						<h1>
+							<legend>
+								Contact Via E-mail
+							</legend>
+						</h1>
+						
+						<label name="name" for="textbox">
+							Voornaam en achternaam*:
+						</label>
+						
+						<p>
+						</p>
+						
+						<input type="textbox"
+							   id="textbox"
+											 >
+						</input>
+						
+						<p>
+						</p>
+						
+						<label name="email" for="textbox">
+							E-mail adres*:
+						</label>
+						
+						<p>
+						</p>
+						
+						<input  type="email" id="email"
+						 >
+						 
+						 <p>
+						 </p>
+						 
+						
+						
+						<label name="message" for="mytextarea">
+							Bericht*:
+						</label>
+						
+						<p>
+						</p>
+						
+						<textarea
+								id = "mytextarea"
+								rows = "6"
+								cols = "80">
+							
+						</textarea>
+						
+						<p>
+						</p>
+						
+						<input type="submit"
+							   value="> Verzend">
+						</input>
+					</fieldset>
+					
+			</form>
 		</section>
 		
 		<footer>
