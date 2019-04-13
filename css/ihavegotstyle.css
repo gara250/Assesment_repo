@@ -1,11 +1,62 @@
 /* dit zijn alle css bewerkingen voor de website gracie-haarlem */
+@font-face
+{
+font-family: "Berlin Sans FB";
+src: url("fonts/Berlin Sans FB.ttf");
+}
 
-ul
+@font-face
+{
+font-family: Arial;
+src: url("fonts/Arial.ttf");
+}
+
+body
+{
+	max-width:1000px;
+	margin:auto;
+	font-family: "Berlin Sans FB", Arial;
+}
+
+#navigation-bar
 {
 	list-style-type: none;
 	margin:0;
 	padding:0;
+	background-color:#2699FB;
+	overflow:hidden;
+	border: 1px solid #000000;
 }
+
+.navigation-element
+{
+	float:left;
+}
+
+h1
+{
+	color:#707070;
+}
+
+h2
+{
+	color:#AAAAAA;
+}
+.navigation-element a:hover:not(.navigation-element) {
+  background-color: #FFFFFF;
+}
+
+
+
+.navigation-element a
+{
+	display:block;
+	color: #444444;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
 
 .index-image
 {
@@ -34,7 +85,8 @@ body
 #cookie-statement
 {
 	z-index:9999;
-	margin:50px; 
+	padding:15px 16px;
+	border: 1px solid #F5F5F5;
 }
 
 p
@@ -48,5 +100,17 @@ article
 }
 
 
+@media screen and (max-width: 960px) {
+	body
+	{
+		width:960px;
+	}
+}
 
+@media screen and (max-width: 400px) {
+	body
+	{
+		width:400px;
+	}
+}
 
