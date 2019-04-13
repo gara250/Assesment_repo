@@ -7,6 +7,18 @@ src: url("fonts/Berlin Sans FB.ttf");
 
 @font-face
 {
+font-family: "Times New Roman";
+src: url("fonts/Times New Roman.ttf");
+}
+
+@font-face
+{
+font-family: "Times";
+src: url("fonts/Times.ttf");
+}
+
+@font-face
+{
 font-family: Arial;
 src: url("fonts/Arial.ttf");
 }
@@ -15,7 +27,18 @@ body
 {
 	max-width:1000px;
 	margin:auto;
-	font-family: "Berlin Sans FB", Arial;
+	font-family: "Berlin Sans FB", Arial, "Times New Roman", Times, serif;
+}
+
+#background-video
+{
+	 position: fixed;
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%; 
+	 min-height: 100%;
+	 z-index:-100;
+	 background-position:center center;
 }
 
 #navigation-bar
@@ -26,6 +49,8 @@ body
 	background-color:#2699FB;
 	overflow:hidden;
 	border: 1px solid #000000;
+	border-radius: 10px;
+	border-style: inset;
 }
 
 .navigation-element
@@ -43,6 +68,7 @@ h2
 {
 	color:#AAAAAA;
 }
+
 .navigation-element a:hover:not(.navigation-element) {
   background-color: #FFFFFF;
 }
@@ -105,7 +131,6 @@ article
 	body
 	{
 		width:960px;
-		background-color:green;
 	}
 }
 
@@ -113,7 +138,6 @@ article
 	body
 	{
 		width:960px;
-		background-color:blue;
 	}
 }
 
@@ -121,7 +145,6 @@ article
 	body
 	{
 		width:400px;
-		background-color:red;
 	}
 }
 
