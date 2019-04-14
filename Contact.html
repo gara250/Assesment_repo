@@ -1,4 +1,4 @@
-<!DOCTYPE = html>
+<!doctype html>
 <html lang="nl">
 	<head>
 		<meta charset= "utf-8">
@@ -43,6 +43,10 @@
 			</nav>
 		</header>
 		
+		<p id="cookie-statement">
+			Wij gebruiken cookies.
+		</p>
+		
 		<section>
 			<form
 				action = "http://witan.nl/inholland/testform.php"
@@ -50,35 +54,40 @@
 				>
 			
 					<fieldset>
-						<h1>
-							<legend>
-								Contact Via E-mail
-							</legend>
-						</h1>
 						
-						<label name="name" for="textbox">
-							Voornaam en achternaam*:
+						<legend>
+							Contact Via E-mail
+						</legend>
+			
+						
+						<label name="name" for="naam">
+							Voor-en achternaam*:
 						</label>
 						
 						<p>
 						</p>
 						
-						<input type="textbox"
-							   id="textbox"
+						<input type="naam"
+							   id="naam"
+							   placeholder="Voor-en achternaam"
+							   name= "name"
 											 >
 						</input>
 						
 						<p>
 						</p>
 						
-						<label name="email" for="textbox">
+						<label name="email" for="email">
 							E-mail adres*:
 						</label>
 						
 						<p>
 						</p>
 						
-						<input  type="email" id="email"
+						<input  type="email" 
+								id="email"
+								placeholder="Voorbeeld@email.com"
+								name="email"
 						 >
 						 
 						 <p>
@@ -96,16 +105,18 @@
 						<textarea
 								id = "mytextarea"
 								rows = "6"
-								cols = "80">
-							
+								cols = "80"
+								placeholder="Type hier..."
+								name="message">
 						</textarea>
 						
 						<p>
 						</p>
 						
-						<input type="submit"
-							   value="> Verzend">
-						</input>
+						<button type="submit"
+							   value="submit">
+							   verzend
+						</button>
 					</fieldset>
 					
 			</form>
